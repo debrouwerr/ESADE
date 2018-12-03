@@ -16,7 +16,7 @@ app = dash.Dash()
 
 
 df = pd.read_csv(
-    'C:\\Users\\PC\\Documents\\ESADE\\Cloud Computing\\Session 7\\CC 7\\CC 7\\nama_10_gdp\\nama_10_gdp_1_Data.csv')
+    'nama_10_gdp_1_Data.csv')
 df=df[df['UNIT']=='Current prices, million euro']
 
 
