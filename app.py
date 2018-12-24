@@ -17,7 +17,7 @@ app = dash.Dash()
 
 df = pd.read_csv(
     'nama_10_gdp_1_Data.csv')
-df=df[df['UNIT']=='Current prices, million euro']
+df=df[(df['UNIT']=='Current prices, million euro') & df['GEO'].apply(lambda x : 'Euro' not in x)]
 
 
 app = dash.Dash(__name__)
